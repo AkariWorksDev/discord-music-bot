@@ -9,10 +9,10 @@ module.exports = {
 	cooldown: 5,
 	async execute(message, args) {
 		const { channel } = message.member.voice;
-		if (!channel) return message.channel.send('I\'m sorry but you need to be in a voice channel to play music!');
+		if (!channel) return message.channel.send('Tienes que estar en un canal de voz para usar este comando tiiiiiioooooo!!!');
 		const permissions = channel.permissionsFor(message.client.user);
-		if (!permissions.has('CONNECT')) return message.channel.send('I cannot connect to your voice channel, make sure I have the proper permissions!');
-		if (!permissions.has('SPEAK')) return message.channel.send('I cannot speak in this voice channel, make sure I have the proper permissions!');
+		if (!permissions.has('CONNECT')) return message.channel.send('No me deja conectarme a tu canal de voz tiiiioooo, me has dado permisos suficientes?!');
+		if (!permissions.has('SPEAK')) return message.channel.send('No puedo reproducir música en este canal de voz tiiiiiiiioo,  me has dado permisos suficientes?!');
 
 		const serverQueue = message.client.queue.get(message.guild.id);
 		const songInfo = await ytdl.getInfo(args[0].replace(/<(.+)>/g, '$1'));
@@ -25,7 +25,7 @@ module.exports = {
 		if (serverQueue) {
 			serverQueue.songs.push(song);
 			console.log(serverQueue.songs);
-			return message.channel.send(`✅ **${song.title}** has been added to the queue!`);
+			return message.channel.send(`✅ He añadido **${song.title}** a la cola de reproducción tiiiiiooo!`);
 		}
 
 		const queueConstruct = {
@@ -54,7 +54,7 @@ module.exports = {
 				})
 				.on('error', error => console.error(error));
 			dispatcher.setVolumeLogarithmic(queue.volume / 5);
-			queue.textChannel.send(`🎶 Start playing: **${song.title}**`);
+			queue.textChannel.send(`🎶 Reproduciendo: **${song.title}**`);
 		};
 
 		try {
@@ -62,10 +62,10 @@ module.exports = {
 			queueConstruct.connection = connection;
 			play(queueConstruct.songs[0]);
 		} catch (error) {
-			console.error(`I could not join the voice channel: ${error}`);
+			console.error(`No he podido conectarme a ese canal de voz tiiiiio: ${error}`);
 			message.client.queue.delete(message.guild.id);
 			await channel.leave();
-			return message.channel.send(`I could not join the voice channel: ${error}`);
+			return message.channel.send(`No he podido conectarme a ese canal de voz tiiiiio: ${error}`);
 		}
 	}
 };

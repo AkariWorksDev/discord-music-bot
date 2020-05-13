@@ -1,7 +1,7 @@
-# Simple discord music bot
-> Very simple discord music bot with the discordjs.guide command handler for easy learning and adapting.
+# Bot supersencillo para discord
+> Bot supersencillo forkeado de 
 
-## Install
+## Cómo instalarlo
 
 ```
 npm install
@@ -9,34 +9,27 @@ npm install
 yarn
 ```
 
+Posibles problemas con node-gyp al instalar dependencias:
+* Necesitarás tener instalado Visual Studio 20XX con compilación para C++, incrediBuild y con el sdk de windows 10
+
+
 ## Usage
 
-Copy/Rename the `.env_example` to `.env` and fill out the values:
+Copiar/Cambiar desde `.env_example` a `.env` y rellenar los valores:
 
 ```
 DISCORD_TOKEN=
 DISCORD_PREFIX=
 ```
 
-## Features
+## Características
 
-* [discordjs.guide](https://discordjs.guide/) like commmand handler, easy for learning!
-* Queue system
-* Volume control
-* Pause/Resume
+* [discordjs.guide](https://discordjs.guide/) Guia facil de entender en inglés de discordjs!
+* Cola de canciones
+* Control de volumen
+* Pausar/Continuar
 
-## Contributing
+## Autor
 
-1. [Fork the repository](https://github.com/iCrawl/discord-music-bot/fork)!
-2. Clone your fork: `git clone https://github.com/your-username/discord-music-bot.git`
-3. Create your feature branch: `git checkout -b my-new-feature`
-4. Commit your changes: `git commit -am 'Add some feature'`
-5. Push to the branch: `git push origin my-new-feature`
-6. Submit a pull request :D
-
-## Author
-
-**Discord Presence** © [iCrawl](https://github.com/iCrawl).  
-Authored and maintained by iCrawl.
-
-> GitHub [@iCrawl](https://github.com/iCrawl)
+**Autor original** © [iCrawl](https://github.com/iCrawl).
+**Traducción y cambios** © [borjalan](https://github.com/borjalan).

@@ -7,8 +7,8 @@ module.exports = {
 		if (serverQueue && serverQueue.playing) {
 			serverQueue.playing = false;
 			serverQueue.connection.dispatcher.pause();
-			return message.channel.send('⏸ Paused the music for you!');
+			return message.channel.send('⏸ He detenido la música tiiiioooo, solo para ti!');
 		}
-		return message.channel.send('There is nothing playing.');
+		return message.channel.send('No estoy reproduciendo ninguna canción tiiiiioooo.');
 	}
 };
