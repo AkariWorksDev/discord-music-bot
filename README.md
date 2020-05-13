@@ -24,7 +24,7 @@ DISCORD_PREFIX=
 
 ## Características
 
-* [discordjs.guide](https://discordjs.guide/) Guia facil de entender en inglés de discordjs!
+* [discordjs.guide](https://discordjs.guide/) Guia facil de entender en ingles de discordjs
 * Cola de canciones
 * Control de volumen
 * Pausar/Continuar
