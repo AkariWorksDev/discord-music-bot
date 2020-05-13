@@ -1,5 +1,5 @@
 # Bot supersencillo para discord
-> Bot supersencillo forkeado de 
+> Bot supersencillo forkeado de [iCrawl](https://github.com/iCrawl)
 
 ## Cómo instalarlo
 
